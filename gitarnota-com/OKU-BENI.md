@@ -21,3 +21,6 @@ Bunun için bu depoda GitHub Pages açık olmalı: Settings → Pages → Deploy
 
 ## Güncelleme: Akademi çalışmaları
 `nota-arsivi.html` yenilendi. Arşivin en üstüne iki koleksiyon eklendi: Giuliani Op. 51'in parmak numaralı akademi baskısı (No. 1–4) ve 18 etüdün tamamı (Gökay Salkım dizimi). Yeni PDF ve MIDI dosyaları GitHub Pages'te (`notalar/m9000xx`). Wix'e yine yalnızca `nota-arsivi.html` yüklenecek.
+
+## Düzeltme
+Op. 51'in tam dizisi (No. 1–18) ve La Partida arşivden kaldırıldı: kaynak dosyaları başka bir MuseScore kullanıcısının hesabından geliyor. Akademi çalışmalarında yalnızca Gökay Salkım'ın parmak numaralı Op. 51 No. 1–4 baskısı kaldı. `nota-arsivi.html` yeniden yüklenmeli.
