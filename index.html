@@ -278,7 +278,7 @@ window.Oynatici=(function(){
       dur();veri=null;urls=liste;const no=++yukNo;
       sBol.hidden=liste.length<2;sBol.innerHTML=liste.map((_,k)=>`<option>Bölüm ${k+1}</option>`).join("");sBol.selectedIndex=i;
       bCal.disabled=true;zm.textContent="Ses hazırlanıyor…";cub.value=0;
-      try{const r=await fetch(liste[i]);if(!r.ok)throw new Error(r.status);const v=midiOku(await r.arrayBuffer());if(no!==yukNo)return;
+      try{let ab;if(typeof liste[i]==="function")ab=await liste[i]();else{const r=await fetch(liste[i]);if(!r.ok)throw new Error(r.status);ab=await r.arrayBuffer()}const v=midiOku(ab);if(no!==yukNo)return;
         veri=v;bCal.disabled=false;guncelle();if(otomatik)basla()}
       catch(e){if(no===yukNo){zm.textContent="Ses kaydı yüklenemedi";}}
     }
@@ -298,7 +298,10 @@ const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&g
 const norm=s=>(s||"").toLocaleLowerCase("tr").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/ı/g,"i");
 const PARCA={};DATA.forEach(g=>g.p.forEach(p=>{p.g=g;PARCA[p.id]=p}));
 const dosya=p=>`notalar/m${p.id}.pdf`;
-const midiler=p=>p.md>1?Array.from({length:p.md},(_,k)=>`notalar/m${p.id}-${k+1}.mid`):[`notalar/m${p.id}.mid`];
+let midiPaketi=null;
+const midiAl=(id,k)=>async()=>{midiPaketi=midiPaketi||fetch("notalar/midi.json").then(r=>{if(!r.ok)throw new Error(r.status);return r.json()});
+  const b=(await midiPaketi)[id][k],s=atob(b),u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u.buffer};
+const midiler=p=>Array.from({length:p.md||1},(_,k)=>midiAl(p.id,k));
 const oy=Oynatici(document.getElementById("oy"));
 const st={q:"",besteci:"",donem:"",sirala:"seviye",sev:new Set(),tek:new Set()};
 const acik=new Set();
