@@ -27,3 +27,8 @@ Op. 51'in tam dizisi (No. 1–18) ve La Partida arşivden kaldırıldı: kaynak 
 
 ## Düzeltme 2
 Op. 51 tam dizi (No. 1–18) geri eklendi: dizim Marieh'e ait ve copyleft olarak paylaşılmış (PDF altbilgisi: "Marieh 2018 Copyleft"). Künyeler buna göre yazıldı. La Partida dışarıda kalıyor. `nota-arsivi.html` yeniden yüklenmeli.
+
+## R'nin canlı sitedeki iyileştirmeleri kaynağa alındı
+Oynatıcıya ses düzeyi çubuğu ve gerçek gitar kaydı (Meta Nylon Guitar Fingerstyle, CC0; `klasik-gitar-meta-v1.mp3`) eklendi. Kayıt yüklenemezse tarayıcıda üretilen gitar sesine dönülür. Bu klasördeki `nota-arsivi.html` canlıdakiyle birebir aynı. `klasik-gitar-meta-v1.mp3` canlı sitenin kökünde duruyor; depoda da kökte bir kopyası var (GitHub Pages sürümü için).
+
+**Önemli:** Canlı sitede doğrudan değişiklik yaparsan, aynı değişikliği bu depoya da gönder (ya da Gökay'a haber ver). Yoksa bir sonraki güncellemede kaybolur.
