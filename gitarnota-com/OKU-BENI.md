@@ -18,3 +18,6 @@ Bunun için bu depoda GitHub Pages açık olmalı: Settings → Pages → Deploy
 
 ## Güncelleme: notaları dinleme
 `nota-arsivi.html` yenilendi. Görüntüleyiciye “Çal” düğmesi, hız seçimi (%50–%125) ve ilerleme çubuğu eklendi. Ses, her notanın MIDI kaydından tarayıcıda üretiliyor. MIDI dosyaları da notalar gibi GitHub Pages'te duruyor (`notalar/*.mid`). Bu güncelleme için Wix'e yalnızca `nota-arsivi.html` dosyasının yeniden yüklenmesi yeterli. Diğer 11 dosya değişmedi.
+
+## Güncelleme: Akademi çalışmaları
+`nota-arsivi.html` yenilendi. Arşivin en üstüne iki koleksiyon eklendi: Giuliani Op. 51'in parmak numaralı akademi baskısı (No. 1–4) ve 18 etüdün tamamı (Gökay Salkım dizimi). Yeni PDF ve MIDI dosyaları GitHub Pages'te (`notalar/m9000xx`). Wix'e yine yalnızca `nota-arsivi.html` yüklenecek.
