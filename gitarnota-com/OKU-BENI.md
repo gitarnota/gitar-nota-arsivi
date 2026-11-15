@@ -24,3 +24,6 @@ Bunun için bu depoda GitHub Pages açık olmalı: Settings → Pages → Deploy
 
 ## Düzeltme
 Op. 51'in tam dizisi (No. 1–18) ve La Partida arşivden kaldırıldı: kaynak dosyaları başka bir MuseScore kullanıcısının hesabından geliyor. Akademi çalışmalarında yalnızca Gökay Salkım'ın parmak numaralı Op. 51 No. 1–4 baskısı kaldı. `nota-arsivi.html` yeniden yüklenmeli.
+
+## Düzeltme 2
+Op. 51 tam dizi (No. 1–18) geri eklendi: dizim Marieh'e ait ve copyleft olarak paylaşılmış (PDF altbilgisi: "Marieh 2018 Copyleft"). Künyeler buna göre yazıldı. La Partida dışarıda kalıyor. `nota-arsivi.html` yeniden yüklenmeli.
